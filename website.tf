@@ -39,17 +39,6 @@ data "aws_subnet" "subnet-public-1" {
   }
 }
 
-data "aws_subnet" "subnet-public-2" {
-  tags = {
-    Name = "${var.env}-subnet-public-2"
-  }
-}
-
-data "aws_subnet" "subnet-public-3" {
-  tags = {
-    Name = "${var.env}-subnet-public-3"
-  }
-}
 
 data "aws_subnet" "subnet-private-1" {
   tags = {
@@ -57,17 +46,6 @@ data "aws_subnet" "subnet-private-1" {
   }
 }
 
-data "aws_subnet" "subnet-private-2" {
-  tags = {
-    Name = "${var.env}-subnet-private-2"
-  }
-}
-
-data "aws_subnet" "subnet-private-3" {
-  tags = {
-    Name = "${var.env}-subnet-private-3"
-  }
-}
 
 ## AZ zones de disponibilités dans la région
 data "aws_availability_zones" "all" {}
