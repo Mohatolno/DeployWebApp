@@ -19,7 +19,7 @@ data "aws_ami" "selected" {
   }
   filter {
     name   = "tag:Name"
-    values = ["Packer-Ansible"]
+    values = ["dev-RollandGarros-AMI"]
   }
   most_recent = true
 }
